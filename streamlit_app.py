@@ -2,7 +2,7 @@
 
 import streamlit as st
 import pandas as pd
-import joblib
+import dill
 
 st.header("Telecommunication Customer Churn Prediction Model")
 st.write("Required Action: Please complete every field below.")
@@ -60,10 +60,10 @@ for col, charge_col in [('day.mins','day.charge'), ('night.mins','night.charge')
 
 # load transformer & model
 with open('transformer.pkl', 'rb') as file:
-    transformer = joblib.load(file)
+    transformer = dill.load(file)
 
 with open('best_model.pkl', 'rb') as file:
-    model = joblib.load(file)
+    model = dill.load(file)
 
 # transform & predict
 df_transformed = transformer.transform(df)
