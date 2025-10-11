@@ -13,5 +13,3 @@ Steps :
 8. Model evaluation : Metrics used roc_auc_score , F1_score , Precision , Recall & roc_curve
 9. Saved best model as .pkl
 10. Deployment : using StreamLit app
-
-StreamLit link : 
