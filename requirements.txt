@@ -3,9 +3,7 @@ numpy
 matplotlib
 seaborn
 scikit-learn
-imblearn
 streamlit
 joblib
-dill
 xgboost
 lightgbm
