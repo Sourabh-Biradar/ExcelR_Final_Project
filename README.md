@@ -16,3 +16,5 @@ Steps :
 
 - cmd : pip install -r requirements.txt
 - cmd : streamlit run streamlit_app.py
+
+* StreamLit link : https://excelr-final-project-telecom-churn.streamlit.app
