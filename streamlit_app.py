@@ -14,7 +14,7 @@ states = ['KS', 'OH', 'NJ', 'OK', 'AL', 'MA', 'MO', 'LA', 'WV', 'IN', 'RI', 'IA'
 
 state_id = st.selectbox("Please select State", options=states)
 area_code = st.selectbox("Enter Area Code", options=['area_code_415', 'area_code_408', 'area_code_510'])
-account_length = st.number_input("Enter Account Length", min_value=0)
+account_length = st.number_input("Enter Account Length", min_value=0,max_value=245)
 voice_plan = st.selectbox("Is Voice Plan active?", options=['yes', 'no'])
 voice_messages = st.slider("Select number of Voice Messages", 0.0, 55.0)
 intl_plan = st.selectbox("Is International Plan active?", options=['yes', 'no'])
